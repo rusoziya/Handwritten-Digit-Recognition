@@ -40,14 +40,8 @@ TensorFlow
 NumPy
 Matplotlib
 Scikit-learn
-To install the required packages, run:
 
-bash
-Kodu kopyala
-pip install -r requirements.txt
-Dataset Files
 Ensure you have the following dataset files in the project directory:
-
 train-images.idx3-ubyte
 train-labels.idx1-ubyte
 t10k-images.idx3-ubyte
