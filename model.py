@@ -1,17 +1,13 @@
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense
+from tensorflow import Sequential
+from tensorflow import Dense
 
 def build_model():
-    """
-    Builds a neural network model with 3 layers:
-    - Layer 1: 25 neurons with ReLU activation
-    - Layer 2: 15 neurons with ReLU activation
-    - Layer 3: 10 output neurons with linear activation
-    """
     model = Sequential([
-        Dense(25, activation='relu', input_shape=(400,), name='L1'),  # Input layer: 400 features
-        Dense(15, activation='relu', name='L2'),                      # Hidden layer
-        Dense(10, activation='linear', name='L3')                     # Output layer
+        Dense(25, activation='relu', input_shape=(784,), name='L1'),  # Layer 1 with 25 neurons
+        Dense(15, activation='relu', name='L2'),                      # Layer 2 with 15 neurons
+        Dense(10, activation='linear', name='L3')                     # Output layer with 10 neurons
     ])
+    
+    model.summary()  # Show the model architecture
     
     return model  # Return the constructed model
