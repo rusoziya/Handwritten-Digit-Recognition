@@ -53,6 +53,8 @@ To train the model, evaluate its performance, and display the results, simply ru
 
 The script will:
 
+The script will:
+
 Load the MNIST dataset.
 Split the training set into 75% training and 15% validation.
 Train the neural network for 10 epochs.
@@ -63,15 +65,26 @@ Training and Validation: The model is trained using 75% of the dataset and valid
 Error Display: The number of misclassified images is displayed after evaluating the model.
 Loss Plot: A plot of training and validation loss is generated to track model performance over epochs.
 Random Image Prediction: Displays a grid of randomly selected test images along with the predicted label and true label.
+Results
+Test Accuracy
+After training the model, the test accuracy is printed.
 
-## Results
-Test Accuracy: After training the model, the test accuracy is printed.
-Loss Plot: A plot showing the loss over training epochs is generated.
-Prediction Visualization: A grid of random test images is displayed with true and predicted labels.
+Loss Plot
+A plot showing the loss over training epochs is generated. This plot illustrates how the training and validation loss decreases over time, which helps to monitor whether the model is learning efficiently and not overfitting.
+
+
+Prediction Visualization
+A grid of random test images is displayed with true and predicted labels. This allows us to visually inspect the model's performance on random test samples and see how often it predicts the correct digit.
+
+
+Sample Output
 Sample Output
 Training Loss and Validation Loss plot:
+This plot shows how the training loss and validation loss change over time (epochs). A decreasing trend indicates that the model is learning effectively, and the gap between training and validation loss provides insight into overfitting.
+
 
 Random Prediction Grid:
+This grid displays a random selection of images from the test set along with the predicted label and the true label for each image. The images are shown in grayscale with labels above each image.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
